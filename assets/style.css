@@ -3,6 +3,8 @@ body{
     padding:0;
 }
 
+
+/* formats the header on the page */
 header{ 
     margin:0;
     padding:0;
@@ -11,19 +13,23 @@ header{
     justify-content: space-between;
     font-family: 'Lato', sans-serif;
 }
+/* puts space between the words in the header */
 header h1{
     width:30%;
     font-size: 2.5rem;
 }
+/* puts words in header side by side */
 header nav{
     width: 65%;
     font-size: 1.5rem;
 }
+/* formats everything out of the middle */
 nav ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
+/* centers all rows and puts parameters around them */
 .row{
     display:flex;
     margin: 5%;
@@ -79,6 +85,36 @@ p {
 #work{
     width:100%;
 }
+
+body{
+    background: aquamarine;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 4%;
+  }
+  article{
+    min-height: 350px;
+    border: 1px solid black;
+
+@media screen and (min-width: 768px){
+    main{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    article{
+      flex: 0 1 45%;
+      margin-top: 2%;
+    }
+    h1{
+      flex: 0 1 100%;
+    }
+    #article-3{
+      flex: 0 1 100%;
+    }
+  }
 /*
 /*
 font-family: 'Lato', sans-serif;
